@@ -1,0 +1,49 @@
+.amazing {
+  color: yellowgreen;
+  font-size: 20px;
+  border: 1px solid salmon;
+}
+body {
+  background-image: url("../pictures/nyc/nyc.jpg");
+}
+body .App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+body .App .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body .App .links a {
+  color: yellowgreen;
+  font-size: 20px;
+  border: 1px solid salmon;
+}
+body .App .links a:hover {
+  color: red;
+}
+body .App .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media (max-width: 600px) {
+  body .App .content {
+    flex-direction: column;
+  }
+}
+body .App .content .summary {
+  width: 300px;
+}
+body .App .content .summary:hover {
+  border: 1px solid black;
+}
+body .App .content .summary p {
+  font-weight: bold;
+  color: red;
+}
+body .App .content .summary p:hover {
+  color: green;
+}

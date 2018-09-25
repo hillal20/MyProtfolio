@@ -1,0 +1,49 @@
+// type this command in terminal less-watch-compiler  less css App.less
+
+@redColor: red;
+.amazing {
+  color: yellowgreen;
+  font-size: 20px;
+  border: 1px solid salmon;
+}
+
+body {
+  background-image: url("../pictures/nyc/nyc.jpg");
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      a {
+        &:hover {
+          color: red;
+        }
+        .amazing;
+      }
+    }
+    .content {
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .summary {
+        width: 300px;
+        &:hover {
+          border: 1px solid black;
+        }
+        p {
+          &:hover {
+            color: green;
+          }
+          font-weight: bold;
+          color: @redColor;
+        }
+      }
+    }
+  }
+}

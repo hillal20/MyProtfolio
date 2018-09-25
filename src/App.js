@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./css/App.css";
 import Link from "react-router-dom";
 import Hilal from "./pictures/hilal/hilal.jpg";
 class App extends Component {
