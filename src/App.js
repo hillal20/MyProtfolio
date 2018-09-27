@@ -26,7 +26,7 @@ class App extends Component {
           </div>
 
           <div className="summary">
-            <p> Hey!!!I am Hilal Aissani </p>
+            <p> Hey!!! I am Hilal Aissani </p>
             <p>
               Before I found my passion for Software Engineering and Web
               Development, I worked in business management and customer service.

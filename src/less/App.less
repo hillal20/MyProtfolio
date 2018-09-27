@@ -18,6 +18,7 @@ body {
       flex-direction: row;
       justify-content: space-around;
       a {
+        text-decoration: none;
         &:hover {
           color: red;
         }
@@ -27,6 +28,10 @@ body {
     .content {
       @media (max-width: 600px) {
         flex-direction: column;
+        .summary {
+          margin-left: 30px;
+          margin-top: 20px;
+        }
       }
       margin-top: 100px;
       display: flex;
