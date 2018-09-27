@@ -8,17 +8,17 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <h1>Welcome to Hilal Place </h1>
+          <h1> Hilal Aissani </h1>
         </div>
 
         <div className="links">
           <a href="https://resume.creddle.io/resume/ds1uidky3ot">Resume</a>
 
           <a href="https://www.linkedin.com/in/hilal-aissani-a8823349/">
-            Linkin{" "}
+            Linkedin{" "}
           </a>
 
-          <a href="mailto:hilalaissani@gmail.com"> email me </a>
+          <a href="mailto:hilalaissani@gmail.com"> Email me </a>
         </div>
         <div className="content">
           <div className="myImage">
@@ -56,9 +56,8 @@ class App extends Component {
           </div>
         </div>
         <div className="video">
-          <p>discover my project</p>
           <a href="https://lambda-dashboard-cs9.herokuapp.com">
-            <p>my project</p>
+            <p> Click here to go to my project</p>
           </a>
           <iframe
             width="560"

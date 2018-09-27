@@ -1,10 +1,10 @@
 // type this command in terminal less-watch-compiler  less css App.less
 
 @redColor: red;
+@whiteColor: white;
 .amazing {
-  color: yellowgreen;
+  color: #1230da;
   font-size: 20px;
-  border: 1px solid salmon;
 }
 
 body {
@@ -28,22 +28,41 @@ body {
       @media (max-width: 600px) {
         flex-direction: column;
       }
+      margin-top: 100px;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      .myImage {
+        img {
+          border-radius: 300px;
+        }
+      }
       .summary {
+        background: papayawhip;
+        border-radius: 10px;
         width: 300px;
+        padding: 20px;
         &:hover {
           border: 1px solid black;
+          border-radius: 20px;
         }
         p {
           &:hover {
             color: green;
           }
           font-weight: bold;
-          color: @redColor;
+          color: purple;
+          font-size: 20px;
         }
       }
-    }
+    } // content
+    .video {
+      background: -webkit-linear-gradient();
+      p {
+        color: palegreen;
+        font-size: 30px;
+        font-weight: bold;
+      }
+    } // vedio
   }
 }

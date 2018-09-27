@@ -1,7 +1,6 @@
 .amazing {
-  color: yellowgreen;
+  color: #1230da;
   font-size: 20px;
-  border: 1px solid salmon;
 }
 body {
   background-image: url("../pictures/nyc/nyc.jpg");
@@ -17,14 +16,14 @@ body .App .links {
   justify-content: space-around;
 }
 body .App .links a {
-  color: yellowgreen;
+  color: #1230da;
   font-size: 20px;
-  border: 1px solid salmon;
 }
 body .App .links a:hover {
   color: red;
 }
 body .App .content {
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -34,16 +33,32 @@ body .App .content {
     flex-direction: column;
   }
 }
+body .App .content .myImage img {
+  border-radius: 300px;
+}
 body .App .content .summary {
+  background: papayawhip;
+  border-radius: 10px;
   width: 300px;
+  padding: 20px;
 }
 body .App .content .summary:hover {
   border: 1px solid black;
+  border-radius: 20px;
 }
 body .App .content .summary p {
   font-weight: bold;
-  color: red;
+  color: purple;
+  font-size: 20px;
 }
 body .App .content .summary p:hover {
   color: green;
+}
+body .App .video {
+  background: -webkit-linear-gradient();
+}
+body .App .video p {
+  color: palegreen;
+  font-size: 30px;
+  font-weight: bold;
 }
