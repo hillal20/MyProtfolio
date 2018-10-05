@@ -4,6 +4,7 @@
 }
 body {
   background-image: url("../pictures/nyc/nyc.jpg");
+  width: 100%vw;
 }
 body .App {
   text-align: center;
@@ -21,7 +22,7 @@ body .App .links a {
   font-size: 20px;
 }
 body .App .links a:hover {
-  color: red;
+  color: white;
 }
 body .App .content {
   margin-top: 100px;
@@ -66,4 +67,24 @@ body .App .video p {
   color: palegreen;
   font-size: 30px;
   font-weight: bold;
+}
+.box1 {
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  color: red;
+  position: absolute;
+  padding: 20px;
+  top: 0px;
+  left: 0px;
+  background: aliceblue;
+  align-items: space-around;
+}
+.box1 .box2 {
+  border-top: 1px solid black;
+  margin-top: 10px;
+}
+.box1 .box3 {
+  border-top: 1px solid black;
+  margin-top: 50px;
 }

@@ -9,10 +9,12 @@
 
 body {
   background-image: url("../pictures/nyc/nyc.jpg");
+  width: 100%vw;
   .App {
     text-align: center;
     display: flex;
     flex-direction: column;
+
     .links {
       display: flex;
       flex-direction: row;
@@ -20,7 +22,7 @@ body {
       a {
         text-decoration: none;
         &:hover {
-          color: red;
+          color: white;
         }
         .amazing;
       }
@@ -69,5 +71,26 @@ body {
         font-weight: bold;
       }
     } // vedio
+  } //app
+} // body
+.box1 {
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  color: red;
+  position: absolute;
+  padding: 20px;
+  top: 0px;
+  left: 0px;
+  background: aliceblue;
+  align-items: space-around;
+
+  .box2 {
+    border-top: 1px solid black;
+    margin-top: 10px;
+  }
+  .box3 {
+    border-top: 1px solid black;
+    margin-top: 50px;
   }
 }

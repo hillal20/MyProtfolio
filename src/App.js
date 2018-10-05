@@ -3,12 +3,40 @@ import logo from "./logo.svg";
 import "./css/App.css";
 import Link from "react-router-dom";
 import Hilal from "./pictures/hilal/hilal.jpg";
+
+const inLineStyle = {
+  background: "red"
+};
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      clicked: false
+    };
+  }
+  display = event => {
+    // alert("hello");
+    console.log(event.target.style);
+    this.setState({ clicked: !this.state.clicked });
+    // event.target.style.background = "red";
+  };
   render() {
+    const { clicked } = this.state;
     return (
       <div className="App">
         <div>
           <h1> Hilal Aissani </h1>
+        </div>
+
+        <div className="box1" onClick={this.display}>
+          <div className="box2" />
+          <div className="box3" />
+          {clicked && (
+            <div>
+              {" "}
+              <a href="#">link to my skills </a>
+            </div>
+          )}
         </div>
 
         <div className="links">
