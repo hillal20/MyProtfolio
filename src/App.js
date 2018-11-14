@@ -32,7 +32,7 @@ class App extends Component {
           <div className="box2" />
           <div className="box3" />
           {clicked && (
-            <div>
+            <div className="model1">
               {" "}
               <a href="#">link to my skills </a>
             </div>

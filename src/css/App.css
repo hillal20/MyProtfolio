@@ -88,3 +88,9 @@ body .App .video p {
   border-top: 1px solid black;
   margin-top: 50px;
 }
+.model1 {
+  background: yellowgreen;
+  position: absolute;
+  top: 150px;
+  left: 10px;
+}
