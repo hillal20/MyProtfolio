@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 const react = require("./pictures/react/react.png");
 const python = require("./pictures/python/python.png");
+const c = require("./pictures/c/c.png");
+const jest = require("./pictures/jest/jest.png");
+const html = require("./pictures/html/html.png");
+const js = require("./pictures/javascript/JavaScript.png");
+const node = require("./pictures/node/node.png");
+
 class Skills extends Component {
   render() {
     return (
       <div className="skills">
-        <h1>list of skills: </h1>
+        <h1> skills: </h1>
         <div className="react">
           <img src={react} width="100" />
         </div>
@@ -13,19 +19,19 @@ class Skills extends Component {
           <img src={python} width="100" />
         </div>
         <div className="node">
-          <h3>" Nodej "</h3>
+          <img src={node} width="100" />
         </div>
         <div className="jest">
-          <h3>"Jest"</h3>
+          <img src={jest} width="100" />
         </div>
         <div className="html">
-          <h3>"Less Css Html"</h3>
+          <img src={html} width="100" />
         </div>
         <div className="javascript">
-          <h3>"JavaScript"</h3>
+          <img src={js} width="100" />
         </div>
         <div className="c">
-          <h3>"C"</h3>
+          <img src={c} width="100" />
         </div>
       </div>
     );

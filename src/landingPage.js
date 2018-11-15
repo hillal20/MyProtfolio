@@ -32,8 +32,13 @@ class LandingPage extends Component {
           {clicked && (
             <div className="model1">
               {" "}
-              <Link to="/skills">link to my skills </Link>
-              <Link to="#"> contact me </Link>
+              <Link to="/skills">
+                <h3>link to my skills</h3>{" "}
+              </Link>
+              <Link to="contact">
+                {" "}
+                <h3>contact me</h3>{" "}
+              </Link>
             </div>
           )}
         </div>

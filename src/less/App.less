@@ -23,7 +23,7 @@ body {
       a {
         text-decoration: none;
         &:hover {
-          color: white;
+          color: red;
         }
         .amazing;
       }
@@ -43,9 +43,11 @@ body {
       .myImage {
         img {
           border-radius: 300px;
+          box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
         }
       }
       .summary {
+        box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
         background: papayawhip;
         border-radius: 10px;
         width: 300px;
@@ -102,6 +104,18 @@ body {
   left: 10px;
 }
 .skills {
+  background-image: url("../pictures/nyc/nyc.jpg");
+  box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+  h1 {
+    margin-left: 200px;
+    font-size: 40px;
+  }
+  border: 2px solid red;
+
+  color: blue;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,36 +125,75 @@ body {
     }
   }
   .python {
+    margin-left: 100px;
     img {
       border-radius: 50px;
     }
   }
   .node {
-    background: tomato;
-    width: 100px;
-    height: 100px;
-    border: 2px solid green;
-    border-radius: 50px;
+    margin-left: 150px;
+    img {
+      border-radius: 50px;
+    }
   }
   .jest {
-    background: tomato;
-    width: 100px;
-    height: 100px;
-    border: 2px solid green;
-    border-radius: 50px;
+    margin-left: 200px;
+    img {
+      border-radius: 50px;
+    }
   }
   .html {
-    background: tomato;
-    width: 100px;
-    height: 100px;
-    border: 2px solid green;
-    border-radius: 50px;
+    margin-left: 250px;
+    img {
+      border-radius: 50px;
+    }
   }
   .javascript {
-    background: tomato;
+    margin-left: 300px;
+    img {
+      border-radius: 50px;
+    }
+  }
+  .c {
+    margin-left: 350px;
+    img {
+      border-radius: 50px;
+    }
+  }
+}
+.contact {
+  background-image: url("../pictures/nyc/nyc.jpg");
+  box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+  color: blue;
+  margin: 0 300px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid blue;
+  width: 600px;
+  height: 650px;
+  border-radius: 50px;
+  &:hover {
+    opacity: 0.9;
+  }
+  input {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+    border-radius: 10px;
+  }
+  textarea {
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 20px 50px rgba(23, 3, 61, 0.7);
+    border-radius: 10px;
+  }
+  button {
     width: 100px;
-    height: 100px;
-    border: 2px solid green;
+    height: 50px;
+    box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
     border-radius: 50px;
   }
 }

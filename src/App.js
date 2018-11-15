@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./css/App.css";
 import Skills from "./skills.js";
+import Contact from "./contact.js";
 import LandingPage from "./landingPage";
 import Hilal from "./pictures/hilal/hilal.jpg";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Link, Route } from "react-router-dom";
+
 const inLineStyle = {
   background: "red"
 };
@@ -27,6 +29,7 @@ class App extends Component {
       <div>
         <Route exact path="/" component={LandingPage} />
         <Route path="/skills" component={Skills} />
+        <Route path="/contact" component={Contact} />
       </div>
     );
   }

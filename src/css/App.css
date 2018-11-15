@@ -22,7 +22,7 @@ body .App .links a {
   font-size: 20px;
 }
 body .App .links a:hover {
-  color: white;
+  color: red;
 }
 body .App .content {
   margin-top: 100px;
@@ -41,8 +41,10 @@ body .App .content {
 }
 body .App .content .myImage img {
   border-radius: 300px;
+  box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
 }
 body .App .content .summary {
+  box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
   background: papayawhip;
   border-radius: 10px;
   width: 300px;
@@ -95,41 +97,93 @@ body .App .video p {
   left: 10px;
 }
 .skills {
+  background-image: url("../pictures/nyc/nyc.jpg");
+  box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+  border: 2px solid red;
+  color: blue;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.skills h1 {
+  margin-left: 200px;
+  font-size: 40px;
+}
 .skills .react img {
   border-radius: 50px;
+}
+.skills .python {
+  margin-left: 100px;
 }
 .skills .python img {
   border-radius: 50px;
 }
 .skills .node {
-  background: tomato;
-  width: 100px;
-  height: 100px;
-  border: 2px solid green;
+  margin-left: 150px;
+}
+.skills .node img {
   border-radius: 50px;
 }
 .skills .jest {
-  background: tomato;
-  width: 100px;
-  height: 100px;
-  border: 2px solid green;
+  margin-left: 200px;
+}
+.skills .jest img {
   border-radius: 50px;
 }
 .skills .html {
-  background: tomato;
-  width: 100px;
-  height: 100px;
-  border: 2px solid green;
+  margin-left: 250px;
+}
+.skills .html img {
   border-radius: 50px;
 }
 .skills .javascript {
-  background: tomato;
+  margin-left: 300px;
+}
+.skills .javascript img {
+  border-radius: 50px;
+}
+.skills .c {
+  margin-left: 350px;
+}
+.skills .c img {
+  border-radius: 50px;
+}
+.contact {
+  background-image: url("../pictures/nyc/nyc.jpg");
+  box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+  color: blue;
+  margin: 0 300px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid blue;
+  width: 600px;
+  height: 650px;
+  border-radius: 50px;
+}
+.contact:hover {
+  opacity: 0.9;
+}
+.contact input {
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+  border-radius: 10px;
+}
+.contact textarea {
+  margin-top: 20px;
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 20px 50px rgba(23, 3, 61, 0.7);
+  border-radius: 10px;
+}
+.contact button {
   width: 100px;
-  height: 100px;
-  border: 2px solid green;
+  height: 50px;
+  box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
   border-radius: 50px;
 }
