@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./css/App.css";
-import Link from "react-router-dom";
+import Skills from "./skills.js";
 import Hilal from "./pictures/hilal/hilal.jpg";
-
+import { BrowserRouter as Router } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 const inLineStyle = {
   background: "red"
 };
@@ -34,7 +34,8 @@ class App extends Component {
           {clicked && (
             <div className="model1">
               {" "}
-              <a href="#">link to my skills </a>
+              <Link to="/skills">link to my skills </Link>
+              <Link to="#"> contact me </Link>
             </div>
           )}
         </div>
@@ -96,6 +97,7 @@ class App extends Component {
             allowfullscreen
           />
         </div>
+        <Route path="/skills" component={Skills} />
       </div>
     );
   }
