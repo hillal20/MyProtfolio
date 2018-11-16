@@ -19,7 +19,6 @@ class Contact extends Component {
     this.setState({ [event.target.name]: event.target.value });
   };
   submitInfo = () => {
-    // alert("helloooooo");
     const obj = {
       name: this.state.studentName,
       lastName: this.state.lastName,
@@ -42,48 +41,56 @@ class Contact extends Component {
   render() {
     const { studentName, lastName, message } = this.state;
     return (
-      <div className="contact">
-        <h1> Contact me </h1>
+      <div>
+        {this.state.received === false && (
+          <div className="contact">
+            <h1> Contact me </h1>
 
-        <div className="input">
-          <input
-            type="text"
-            placeholder="enter your name"
-            name="studentName"
-            value={this.state.studentName}
-            onChange={this.eventHandler}
-          />
-        </div>
+            <div className="input">
+              <input
+                type="text"
+                placeholder="enter your name"
+                name="studentName"
+                value={this.state.studentName}
+                onChange={this.eventHandler}
+              />
+            </div>
 
-        <div className="input">
-          <input
-            type="text"
-            placeholder="enter your last name"
-            name="lastName"
-            value={this.state.lastName}
-            onChange={this.eventHandler}
-          />
-        </div>
+            <div className="input">
+              <input
+                type="text"
+                placeholder="enter your last name"
+                name="lastName"
+                value={this.state.lastName}
+                onChange={this.eventHandler}
+              />
+            </div>
 
-        <div className="input">
-          <textarea
-            type="text"
-            placeholder=" type your message"
-            name="message"
-            value={this.state.message}
-            onChange={this.eventHandler}
-          />
-        </div>
-        <div className="input">
-          <button onClick={this.submitInfo}>Submit</button>
-        </div>
-        {(studentName === "" || lastName === "" || message === "") && (
-          <div> the fields can not be empty ...</div>
+            <div className="input">
+              <textarea
+                type="text"
+                placeholder=" type your message"
+                name="message"
+                value={this.state.message}
+                onChange={this.eventHandler}
+              />
+            </div>
+            <div className="input">
+              <button onClick={this.submitInfo}>Submit</button>
+            </div>
+            {(studentName === "" || lastName === "" || message === "") && (
+              <div>
+                {" "}
+                <strong>Note:</strong> " the fields can not be empty ...""
+              </div>
+            )}
+          </div>
         )}
+
         {this.state.received === true && (
-          <div>
+          <div className="message">
             {" "}
-            thank you for contacting us ...
+            s thank you for contacting us ...
             <button
               onClick={() => {
                 this.setState({ received: !this.state.received });
