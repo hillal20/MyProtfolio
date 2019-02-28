@@ -44,7 +44,9 @@ class LandingPage extends Component {
         </div>
 
         <div className="links">
-          <a href="https://resume.creddle.io/resume/ds1uidky3ot">Resume</a>
+          <a href="https://drive.google.com/file/d/1JL-1G12hSq2Klw3DMRoTtLy8Ibq7qxdT/view?usp=sharing">
+            Resume
+          </a>
 
           <a href="https://www.linkedin.com/in/hilal-aissani-a8823349/">
             Linkedin{" "}
@@ -54,6 +56,7 @@ class LandingPage extends Component {
         </div>
         <div className="content">
           <div className="myImage">
+            ß
             <img src={Hilal} width="250" />
           </div>
 
