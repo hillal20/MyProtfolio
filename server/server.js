@@ -42,5 +42,7 @@ server.listen(port, () => {
 });
 
 //deploy
-// heroku create
+
 // heroku login
+// heroku create
+//https://git.heroku.com/myprotfolio.git
