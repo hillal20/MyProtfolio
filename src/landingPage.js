@@ -51,7 +51,7 @@ class LandingPage extends Component {
           <a href="https://www.linkedin.com/in/hilal-aissani-a8823349/">
             Linkedin{" "}
           </a>
-
+          <a href="https://www.github.com/in/hillal20/">GitHub </a>
           <a href="mailto:hilalaissani@gmail.com"> Email me </a>
         </div>
         <div className="content">
